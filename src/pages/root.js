@@ -18,7 +18,7 @@ export const RootPage = () => {
     {
       select: ({ data }) => {
         return data.data.results.map((character) => (
-          <div>
+          <div key={character.id}>
             <img src={character.image} alt="character" />
             <div>{character.name}</div>
           </div>
